@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insta Digital | Download App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        body { background-color: #020617; font-family: 'Inter', sans-serif; color: white; scroll-behavior: smooth; }
+
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        .hero-gradient { background: radial-gradient(circle at center, rgba(6, 182, 212, 0.15) 0%, transparent 70%); }
+
+        #downloadModal { transition: opacity 0.3s ease; display: none; }
+
+        #downloadModal.show { display: flex; opacity: 1; }
+
+    </style>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="fixed top-0 left-0 w-full h-full hero-gradient -z-10"></div>
+
+    <nav class="flex justify-between items-center px-6 py-4 md:px-20 border-b border-white/5 bg-black/40 backdrop-blur-md sticky top-0 z-50">
+
+        <div class="flex items-center gap-3">
+
+            <img src="https://i.ibb.co/2YcXnbm7/34c756f96509.png" alt="Logo" class="w-12 h-12 rounded-xl">
+
+            <span class="text-2xl font-black tracking-tighter uppercase">INSTA<span class="text-cyan-400">DIGITAL</span></span>
+
+        </div>
+
+        <a href="https://wa.me/917378063885" class="bg-green-600 text-white text-[10px] font-black px-4 py-2 rounded-full">WHATSAPP</a>
+
+    </nav>
+
+    <section class="text-center pt-20 pb-12 px-6">
+
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Insta Store <br><span class="text-cyan-400 italic">Official APK</span></h1>
+
+        
+
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">India's most trusted digital store is now on Android.</p>
+
+        <button type="button" onclick="openModal()" class="bg-white text-black px-12 py-5 rounded-[2rem] font-black text-2xl hover:scale-105 transition-all shadow-xl">
+
+            <i class="fab fa-android mr-2 text-green-600"></i> DOWNLOAD NOW
+
+        </button>
+
+    </section>
+
+    <div id="downloadModal" class="fixed inset-0 z-[100] items-center justify-center p-6 bg-black/90 backdrop-blur-md">
+
+        <div class="glass max-w-sm w-full p-8 rounded-[2.5rem] border border-cyan-500/30 text-center">
+
+            <i class="fas fa-file-download text-5xl text-cyan-400 mb-6"></i>
+
+            <h3 class="text-2xl font-black mb-2">Confirm?</h3>
+
+            <p class="text-gray-400 text-sm mb-8">Kya aap Insta Store App download karna chahte hain?</p>
+
+            
+
+            <div class="flex flex-col gap-3">
+
+                <a href="https://www.mediafire.com/file/ax96yt3br3yyjko/Insta-Store-1.apk/file" 
+
+                   target="_blank" 
+
+                   onclick="closeModal()"
+
+                   class="bg-cyan-500 hover:bg-cyan-400 text-black font-black py-4 rounded-2xl shadow-lg transition-all">
+
+                   YES, DOWNLOAD
+
+                </a>
+
+                <button type="button" onclick="closeModal()" class="text-gray-500 font-bold py-2">CANCEL</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="glass p-8 rounded-3xl border border-white/5">
+
+            <i class="fas fa-shield-alt text-cyan-400 text-2xl mb-4"></i>
+
+            <h4 class="font-bold mb-2">100% Secure</h4>
+
+            <p class="text-gray-500 text-sm">No virus, pure premium experience.</p>
+
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/5">
+
+            <i class="fas fa-bolt text-cyan-400 text-2xl mb-4"></i>
+
+            <h4 class="font-bold mb-2">Fast Delivery</h4>
+
+            <p class="text-gray-500 text-sm">Products delivered in seconds.</p>
+
+        </div>
+
+        <div class="glass p-8 rounded-3xl border border-white/5">
+
+            <i class="fas fa-headset text-cyan-400 text-2xl mb-4"></i>
+
+            <h4 class="font-bold mb-2">VIP Support</h4>
+
+            <p class="text-gray-500 text-sm">Direct chat with Bittu bhai.</p>
+
+        </div>
+
+    </section>
+
+    <section class="py-20 text-center">
+
+        <h3 class="font-bold mb-6 italic uppercase">Help Line</h3>
+
+        <a href="https://wa.me/917378063885" class="bg-green-600 px-10 py-5 rounded-2xl font-black shadow-xl inline-block">
+
+            <i class="fab fa-whatsapp text-2xl"></i> CHAT NOW
+
+        </a>
+
+    </section>
+
+    <script>
+
+        function openModal() {
+
+            document.getElementById('downloadModal').style.display = 'flex';
+
+            setTimeout(() => {
+
+                document.getElementById('downloadModal').classList.add('show');
+
+            }, 10);
+
+        }
+
+        function closeModal() {
+
+            document.getElementById('downloadModal').classList.remove('show');
+
+            setTimeout(() => {
+
+                document.getElementById('downloadModal').style.display = 'none';
+
+            }, 300);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
